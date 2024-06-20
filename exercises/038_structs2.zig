@@ -27,7 +27,7 @@ pub fn main() void {
 
     // Glorp the Wise
     chars[0] = Character{
-        .class = Class.wizard,
+        .class = .wizard,
         .gold = 20,
         .health = 100,
         .experience = 10,
@@ -42,6 +42,12 @@ pub fn main() void {
     //
     // Feel free to run this program without adding Zump. What does
     // it do and why?
+    chars[1] = Character{
+        .class = .bard,
+        .gold = 10,
+        .health = 100,
+        .experience = 20,
+    };
 
     // Printing all RPG characters in a loop:
     for (chars, 0..) |c, num| {
